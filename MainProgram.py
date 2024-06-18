@@ -13,7 +13,7 @@ testImages = testImages / 255.0
 trainingImages = trainingImages.reshape((trainingImages.shape[0], 784, 1))
 testImages = testImages.reshape((testImages.shape[0], 784, 1))
 
-# converting the labels to one-hot vectors (0-10)
+# converting the labels to one-hot vectors (0-9)
 def oneHot(labels, numClasses = 10):
     return np.eye(numClasses)[labels].reshape(-1, numClasses, 1)
 
