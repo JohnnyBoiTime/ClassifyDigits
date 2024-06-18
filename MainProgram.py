@@ -21,7 +21,7 @@ def oneHot(labels, numClasses = 10):
 trainingLabels = oneHot(trainingLabels)
 testLabels = oneHot(testLabels)
 
-# Data
+# Pairs data
 trainingData = list(zip(trainingImages, trainingLabels))
 testData = list(zip(testImages, testLabels))
 
